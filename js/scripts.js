@@ -27,4 +27,21 @@ $(document).ready(function() {
       console.log("Click registered!");
     });
 
+    $("#sendButton").click(function(){
+      sendButtonClick();
+    })
+
+
+
 });
+
+function sendButtonClick(){
+  var msgName = $("#name").val();
+  var msgEmail = $("#email").val();
+  var msgNum = $("#pnum").val();
+  var msgMessage = $("#msg").val();
+  console.log(msgName);
+  console.log(msgEmail);
+  console.log(msgNum);
+  console.log(msgMessage);
+}
