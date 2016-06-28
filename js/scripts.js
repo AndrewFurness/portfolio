@@ -17,7 +17,14 @@ $(document).ready(function() {
 		});
 		$('.js-scrolltoid').scrollToID({
 			speed: 1000, //expressed in Milliseconds
-			offset: 30   //in pixels
+			offset: 50   //in pixels
 		});
+
+    $(".and-menu-button").click(function(){
+      $(".and-menu-button").removeClass("active");
+      $(this).addClass("active");
+
+      console.log("Click registered!");
+    });
 
 });
